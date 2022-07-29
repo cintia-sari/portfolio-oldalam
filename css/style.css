@@ -1,0 +1,38 @@
+/* egész oldalra vonatkozó rész*/
+body {
+    background-color: #27013D;
+    color:white;
+    margin: 0;
+}
+
+/*navigációs menü*/
+#home {
+
+   */magasság beállítása*/
+}
+.nav-menu {
+overflow: hidden;
+background-color: rgba(193, 219, 227, 0.2)
+}
+
+
+
+.nav-menu a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration:none;
+    font-size: 20px;
+    color:white
+;
+}
+
+/* kapcsolat tartásos rész*/
+.contact input {
+    background-color: rgba(193, 219, 227, 0.1);
+    margin: 1rem;
+    min-width: 20rem;
+     ;
+
+}
