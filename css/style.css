@@ -20,8 +20,9 @@ body {
 
 .nav-menu {
 overflow: hidden;
-background-color: rgba(193, 219, 227, 0.8);
-
+background-color: rgba(193, 219, 227, 0.95);
+position:sticky;
+top:0;
 }
 
 
@@ -34,7 +35,7 @@ background-color: rgba(193, 219, 227, 0.8);
     text-decoration:none;
     text-decoration: bold;
     font-size: 20px;
-    color: #FF4F79;
+    color: #27013D;
 ;
 }
 
