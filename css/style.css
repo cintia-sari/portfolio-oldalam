@@ -44,9 +44,15 @@ background-color: rgba(193, 219, 227, 0.8);
     background: radial-gradient(#FF4F79, #27013D);
     margin: 1rem;
     min-width: 20rem;
+    display: block;
+    margin: auto;
+width: 500px;
+height: 50px;
 }
 
 
 .contact-area{ 
+    box-sizing: border-box;
+   
 
 }
