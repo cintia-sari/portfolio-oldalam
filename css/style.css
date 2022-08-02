@@ -1,23 +1,40 @@
+/*egész doksi*/
 body {
     background-color: #27013D;
-    color:white;
+    color:rgba(193, 219, 227);
     margin: 0;
 
 }
 
-.keprolam {
-    max-width: 590px;
-    position:relative;
-    left:800px;}
 
-/*navigációs menü*/
+/* nyitó oldal*/
 #home {
-    position:relative;
-    box-sizing:border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.kep-meret {
+    max-width: 400px;
+    }
+   
+.kepessegek-meret{
+    width: 34px;
+    padding: 5%;
+}
+    
+.kepessegek{
+?????;
 }
 
-   /*magasság beállítása*/
+.kepessegek .div {
+   
+}
 
+
+/*navigációs menü*/
 .nav-menu {
 overflow: hidden;
 background-color: rgba(193, 219, 227, 0.95);
@@ -28,8 +45,8 @@ top:0;
 
 
 .nav-menu a {
-    float: left;
-    display: block;
+    float: center;
+    display: inline-block;
     text-align: center;
     padding: 14px 30px;
     text-decoration:none;
@@ -53,6 +70,5 @@ height: 50px;
 
 .contact-area{ 
     box-sizing: border-box;
-   
-
 }
+
