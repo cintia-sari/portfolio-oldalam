@@ -56,19 +56,34 @@ top:0;
 ;
 }
 
+/*portfolió rész */
+.portfolio-kep {
+    max-width:180px
+}
+
+.portfolio-conatnier {
+display: grid;
+grid-template-columns: auto;
+justify-content: center;
+
+.p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
+ display: grid ;
+ grid-template-columns: auto;
+
+}
+
 /* kapcsolat tartásos rész*/
-.contact input {
-    background: radial-gradient(#FF4F79, #27013D);
-    margin: 1rem;
-    min-width: 20rem;
-    display: block;
-    margin: auto;
-width: 500px;
-height: 50px;
-}
 
 
-.contact-area{ 
-    box-sizing: border-box;
+.contact {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    background-color: aliceblue;
 }
+
+.email-box{
+height: 100px;
+}
+/*kicsordulásos kikötést tenni*/ ;
 
