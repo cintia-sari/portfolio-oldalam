@@ -15,6 +15,7 @@ body {
     align-items: center;
     text-align: center;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 .kep-meret {
     max-width: 400px;
@@ -26,7 +27,12 @@ body {
 }
     
 .kepessegek{
-?????;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+justify-content: center;
+grid-column-gap: 15px;
+grid-row-gap: 10px;
+
 }
 
 .kepessegek .div {
@@ -65,25 +71,54 @@ top:0;
 display: grid;
 grid-template-columns: auto;
 justify-content: center;
-
+grid-column-gap: 15px;
+grid-row-gap: 60px;
+color: #27013D;
+}
 .p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
  display: grid ;
  grid-template-columns: auto;
+ background-color: rgba(193, 219, 227, 0.5);
+ padding: 10px;
+}
+.p1 , .p2 , .p3 , .p4 , .p5 , .p6:{
+    background-color:  rgba(193, 219, 227, 1)
+}
+.portfolio-conatnier button {
+    background-color: ;
+    width: 90px;
+    height: 30px;
+    background-color: rgba(255, 202, 58, 0.5);
+    border-style: none;
+}
 
+h4 {
+    display:inline;
+    background-color: rgba(193, 219, 227, 0.95);
+    padding-left:10px ;
+    padding-top: 5px;
+    padding-right:10px;
 }
 
 /* kapcsolat tartásos rész*/
 
 
-.contact {
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    background-color: aliceblue;
+.contact-contanier {
+display: grid;
+grid-template-columns: auto;
+justify-content: center;
 }
 
-.email-box{
-height: 100px;
+.contact-contanier input {
+background-color: rgba(193, 219, 227, 0.95);
+border-style: none;
+padding:5px;
+height:20px;
+margin:10px
+
+}
+.hello {
+  
 }
 /*kicsordulásos kikötést tenni*/ ;
 
