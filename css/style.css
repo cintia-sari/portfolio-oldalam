@@ -91,6 +91,9 @@ color: #27013D;
     background-color: rgba(255, 202, 58, 0.5);
     border-style: none;
 }
+.portfolio-conatnier button::hover{
+    botton-up:
+}
 
 h4 {
     display:inline;
@@ -115,10 +118,113 @@ border-style: none;
 padding:5px;
 height:20px;
 margin:10px
+}
+  
+/*kicsordulásos kikötést tenni*/ ;
+
+
+/*töréspontok beállítása*/
+
+@media screen and (min-width: 720px) {
+    .p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
+        display: grid ;
+        grid-template-columns: auto auto;
+        background-color:rgba(193, 219, 227, 0.5);
+    }
+}
+@media screen and (min-width: 720px) {
+    .welcome {
+        grid-area: welcome;
+    }
+    .nev {
+        grid-area: nev;
+    }
+    .keprolam{
+        grid-area: keprolam;
+    }
+    .kepessegek {
+        grid-area: kepessegek;
+    }
+    #home {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-columns: auto;
+justify-content: center;
+        grid-template-areas: 
+        "welcome keprolam"
+        "nev keprolam"
+        "kepessegek keprolam"
+        }
+
+    .portfolio-kep {
+        grid-area: A;
+    }
+
+.leiras{
+    grid-area: B;
+}
+.szoveg {
+    grid-area: C;
+}
+.gomb {
+    grid-area: D;
+}
+    .p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
+        display: grid ;
+        grid-template-columns: auto auto;
+        background-color:rgba(193, 219, 227, 0.5);
+        grid-column-gap: 20px;
+        grid-template-areas: 
+        "A B"
+        "A C"
+        "A C"
+        "A D";
+    }
+
+    .contact-contanier {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        grid-template-areas: 
+        "name email"
+        "email-box email-box"
+        "submit submit"
+        }
+    .name{
+        grid-area: name;
+    }
+    .email{
+        grid-area: email;
+    }
+    .email-box{
+        grid-area: email-box;
+        height: auto;
+        width: auto;
+    }
+    .submit{
+        grid-area: submit;
+    }
+
+    .email-meret{
+        height: 200px;
+        background-color: blue;
+    }
 
 }
-.hello {
-  
+
+
+@media screen and (min-width: 960px) {
+    
 }
-/*kicsordulásos kikötést tenni*/ ;
+
+@media screen and (min-width: 960px) {
+    .contact-contanier {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        }
+}
+
+
+/*@media screen and (min-width: 1140px){}*/
 
