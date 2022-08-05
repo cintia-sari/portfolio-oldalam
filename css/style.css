@@ -34,8 +34,8 @@ main. {
 }
     
 .kepessegek{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
+display: grid;
+ grid-template-columns: auto auto auto auto auto;
 justify-content: center;
 grid-column-gap: 15px;
 grid-row-gap: 10px;
@@ -79,7 +79,7 @@ top:0;
 display: grid;
 grid-template-columns: auto;
 justify-content: center;
-grid-column-gap: 15px;
+grid-column-gap: 40px;
 grid-row-gap: 60px;
 color: #27013D;
 }
@@ -89,6 +89,7 @@ color: #27013D;
  background-color: rgba(193, 219, 227, 0.6);
  padding: 10px;
  box-shadow: 2px 2px 15px rgb(180, 180, 180);
+ 
 }
 
 .portfolio-conatnier button {
