@@ -76,8 +76,8 @@ main {
 .main-icons{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     text-align: center;
+    justify-content: center;
 }
 
 .main-icons a {
@@ -185,16 +185,20 @@ transition: 300ms;
 
 .portfolio-conatnier {
 padding-bottom: 30px;    
-justify-content: center;
-
 color: var(--main-txt3-color);
+display: flex;
+justify-content: center;
 }
+
+
 .p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
  padding: 10px;
  background-color: var(--main-bg2-color);
  border-top:3px solid var(--main-txt3-color);
  border-left: 3px solid rgb(42, 39, 39);
  border-right: 3px solid rgb(42, 39, 39);
+ max-width: 300px;
+ margin: 15px;
  }
 
 .portfolio-conatnier button {
@@ -207,7 +211,7 @@ color: var(--main-txt3-color);
 h4 {
     font-size: 25px;
     font-weight: 10px;
-    display:inline-block;
+    display:block;
     color: var(--main-txt3-color);
     border-bottom:2px solid var(--main-txt3-color);
 }
@@ -314,7 +318,29 @@ footer{
 @media screen and (min-width: 720px) {}
 
 @media screen and (min-width: 720px) {
-    
+    #home{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    }
+
+    .p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
+        min-width: 500px;
+        margin:30px;
+
+    }
+
+    .portfolio-conatnier{
+        flex-wrap: wrap;
+        
+    }
+
+    .input {
+        min-width: 500px;
+    }
 }
 
 
@@ -329,5 +355,11 @@ footer{
 
 @media screen and (min-width: 1140px){
 
-    
+    .p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
+        min-width: 600px;
+    }
+
+    .input {
+        min-width: 600px;
+    }
 }
