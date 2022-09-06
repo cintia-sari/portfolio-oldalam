@@ -9,6 +9,7 @@
 
 /*egész doksi*/
 body {
+    min-width: 400px;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 2px;
     color: var(--main-txt1-color);
@@ -49,27 +50,39 @@ main {
     }
    
 .kepessegek-meret{
-    width: 60px;
-    padding: 5%;
+    height: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
+
     
 .kepessegek{
-display: grid;
- grid-template-columns: auto auto auto auto;
-justify-content: center;
-grid-column-gap: 20px;
-grid-row-gap: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction:row;
+    margin-bottom: 20px;
 }
 
 .kepessegek-contanier {
-    padding-top:20px;
-    padding-bottom: 20px;
+    justify-content: center;
     text-align: center;
+    padding-top:30px;
+    padding-bottom: 30px;
     background-color: var(--main-bg2-color);
 
 }
 
+.main-icons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
 .main-icons a {
+    margin-left: 15px;
+    margin-right: 15px;
     color: var(--main-txt3-color);
     font-size: 50px;
     text-decoration: none;
@@ -172,16 +185,11 @@ transition: 300ms;
 
 .portfolio-conatnier {
 padding-bottom: 30px;    
-display: grid;
-grid-template-columns: auto;
 justify-content: center;
-grid-column-gap: 40px;
-grid-row-gap: 60px;
+
 color: var(--main-txt3-color);
 }
 .p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
- display: grid ;
- grid-template-columns: auto;
  padding: 10px;
  background-color: var(--main-bg2-color);
  border-top:3px solid var(--main-txt3-color);
@@ -264,6 +272,7 @@ h2{
     font-size: 1rem;
     color: var(--main-txt3-color);
     transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+    min-width: 300px;
    }
    
    .user-label {
