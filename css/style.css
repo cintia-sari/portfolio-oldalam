@@ -9,10 +9,15 @@
 
 /*egész doksi*/
 body {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
     color: var(--main-txt1-color);
     margin: 0;
     background-color: var(--main-bg1-color);
 
+}
+textarea {
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -52,8 +57,8 @@ main {
 display: grid;
  grid-template-columns: auto auto auto auto;
 justify-content: center;
-grid-column-gap: 15px;
-grid-row-gap: 10px;
+grid-column-gap: 20px;
+grid-row-gap: 80px;
 }
 
 .kepessegek-contanier {
@@ -64,13 +69,31 @@ grid-row-gap: 10px;
 
 }
 
+.main-icons a {
+    color: var(--main-txt3-color);
+    font-size: 50px;
+    text-decoration: none;
+}
+.main-icons a:hover{
+    color:var(--main-txt1-color);
+    text-decoration: none;
+}
+
+.user-label{
+    font-family: 'Oswald', sans-serif;
+}
+
+
 .button{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
     background-color: var(--main-bg2-color);
     border:3px solid var(--main-txt3-color) ;
     color:var(--main-txt3-color);
     padding:12px;
     cursor: pointer;
-    margin-top: 30px;
+
+   
 }
 
 .button:hover{
@@ -93,10 +116,15 @@ grid-row-gap: 10px;
 
 /*navigációs menü*/
 .nav-menu {
+
 overflow: hidden;
 background-color: var(--main-bg1-color);
 position:sticky;
 top:0;
+}
+
+.nav-menu a {
+    font-weight: 900;
 }
 
 .nav-menu a:after {
@@ -157,8 +185,8 @@ color: var(--main-txt3-color);
  padding: 10px;
  background-color: var(--main-bg2-color);
  border-top:3px solid var(--main-txt3-color);
- border-left: 2px solid var(--main-bg1-color);
- border-right: 2px solid var(--main-bg1-color);
+ border-left: 3px solid rgb(42, 39, 39);
+ border-right: 3px solid rgb(42, 39, 39);
  }
 
 .portfolio-conatnier button {
@@ -169,10 +197,23 @@ color: var(--main-txt3-color);
 }
 
 h4 {
+    font-size: 25px;
+    font-weight: 10px;
     display:inline-block;
-    margin-top:px;
     color: var(--main-txt3-color);
     border-bottom:2px solid var(--main-txt3-color);
+}
+.szoveg{
+   font-size: 18px;
+   margin-top:0;
+}
+
+h5{
+    margin-top:5px;
+    margin-bottom: 5px;
+    font-size:20px;
+    font-weight: 10px;
+
 }
 
 h3{
@@ -252,109 +293,10 @@ footer{
 
 /*töréspontok beállítása*/
 
+@media screen and (min-width: 720px) {}
+
 @media screen and (min-width: 720px) {
-    .p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
-        display: grid ;
-        grid-template-columns: auto auto;
-        background-color:var(--main-bg2-color);
-        justify-content: :center;
-        align-content: center;
-    }
-}
-@media screen and (min-width: 720px) {
-    .welcome {
-        grid-area: welcome;
-    }
-    .nev {
-        grid-area: nev;
-    }
-    .keprolam{
-        grid-area: keprolam;
-    }
-    .kepessegek {
-        grid-area: kepessegek;
-        
-
-    }
-    #home {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-columns: auto;
-        justify-content: center;
-        grid-template-areas: 
-        "welcome keprolam"
-        "nev keprolam"
-        "kepessegek keprolam"
-        }
-
-    .portfolio-kep {
-        grid-area: A;
-    }
-
-.leiras{
-    grid-area: B;
-}
-.szoveg {
-    grid-area: C;
-}
-.gomb {
-    grid-area: D;
-}
-    .p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
-        background-color: var(--main-bg2-color);
-        border-top:3px solid var(--main-txt3-color);
-        border-left: 2px solid var(--main-bg1-color);
-        border-right: 2px solid var(--main-bg1-color);
-        display: grid ;
-        grid-template-columns: auto auto;
-        grid-column-gap: 20px;
-        grid-template-areas: 
-        "A B"
-        "A C"
-        "A C"
-        "A D";
-    }
-
-    h3{
-        font-size: 50px;
-        margin-top: 80px;
-        margin-bottom: 70px;
-    }
-
-    .contact-contanier {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: center;
-        grid-template-areas: 
-        "name email"
-        "email-box email-box"
-        "submit submit"
-        }
-    .name{
-        grid-area: name;
-    }
-    .email{
-        grid-area: email;
-    }
-    .email-box{
-        grid-area: email-box;
-        height: auto;
-        width: auto;
-    }
-    .submit{
-        grid-area: submit;
-    }
-
-    .email-meret{
-        height: 200px;
-       ;
-    }
-
-    .msg {
-        width:430px ;
-        height:300px
-    }
-
+    
 }
 
 
@@ -363,22 +305,11 @@ footer{
 }
 
 @media screen and (min-width: 960px) {
-    .contact-contanier {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: center;
-        }
-        h3{
-            font-size: 110px;
-            margin-top: 110px;
-            margin-bottom: 100px;
-        }
+   
 }
 
 
 @media screen and (min-width: 1140px){
 
-    .portfolio-conatnier  {
-    grid-template-columns: auto auto;
-}
+    
 }
