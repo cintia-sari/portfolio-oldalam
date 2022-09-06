@@ -1,14 +1,23 @@
+/*hivatkozások*/
+:root{
+    --main-bg1-color: rgb(8, 35, 51);
+    --main-bg2-color: rgb(19, 58, 75);
+    --main-txt1-color: rgb(78, 208, 239);
+    --main-txt2-color: rgb(216, 223, 231);
+    --main-txt3-color: rgba(216,223,231);
+}
+
 /*egész doksi*/
 body {
-    color:rgba(193, 219, 227);
+    color: var(--main-txt1-color);
     margin: 0;
+    background-color: var(--main-bg1-color);
 
 }
 
 
 /* nyitó oldal*/
 #home {
-    background-color: #27013D;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -16,46 +25,96 @@ body {
     text-align: center;
     justify-content: space-between;
     padding-bottom: 40px;
+    background-color:var(--main-bg1-color) ;
+    background-size: cover;
+
 
 }
 
-main. {
-    background-color:  rgb(230, 217, 217);
+
+main {
+    background-size: cover;
+    background-attachment: fixed;
 }
+
 
 
 .kep-meret {
-    max-width: 400px;
+    max-width: 250px;
     }
    
 .kepessegek-meret{
-    width: 34px;
+    width: 60px;
     padding: 5%;
 }
     
 .kepessegek{
 display: grid;
- grid-template-columns: auto auto auto auto auto;
+ grid-template-columns: auto auto auto auto;
 justify-content: center;
 grid-column-gap: 15px;
 grid-row-gap: 10px;
+}
+
+.kepessegek-contanier {
+    padding-top:20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: var(--main-bg2-color);
 
 }
 
-.kepessegek .div {
+.button{
+    background-color: var(--main-bg2-color);
+    border:3px solid var(--main-txt3-color) ;
+    color:var(--main-txt3-color);
+    padding:12px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.button:hover{
+    background-color: var(--main-txt1-color);
+    border:3px solid var(--main-txt1-color) ;
+    color:var(--main-bg1-color);
+}
+    .button:active,
+    .button:hover {
+     outline: 0;
+    }
    
-}
+    .button:active {
+        transform: scale(0.95);
+       }
+
+   
+
 
 
 /*navigációs menü*/
 .nav-menu {
-p
 overflow: hidden;
-background-color: rgba(193, 219, 227, 0.95);
+background-color: var(--main-bg1-color);
 position:sticky;
 top:0;
 }
 
+.nav-menu a:after {
+content: '';
+width: 0px;
+height: 2px;
+display: block;
+background-color: var(--main-txt1-color);
+transition: 300ms;
+
+}
+.nav-menu a:hover::after{
+    width: 100%;
+}
+
+.nav-menu a:hover {
+    color: var(--main-txt1-color);
+}
 
 
 .nav-menu a {
@@ -66,109 +125,124 @@ top:0;
     text-decoration:none;
     text-decoration: bold;
     font-size: 20px;
-    color: #27013D;
-;
+    color: var(--main-txt3-color);
+    transition: 0.3s;  
 }
 
 /*portfolió rész */
+
+.portfolio {
+    background-color:var(--main-bg1-color);
+}
 .portfolio-kep {
-    max-width:180px
+    max-height: 180px;
+}
+
+.nev {
+    color:var(--main-txt3-color);
 }
 
 .portfolio-conatnier {
+padding-bottom: 30px;    
 display: grid;
 grid-template-columns: auto;
 justify-content: center;
 grid-column-gap: 40px;
 grid-row-gap: 60px;
-color: #27013D;
+color: var(--main-txt3-color);
 }
 .p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
  display: grid ;
  grid-template-columns: auto;
- background-color: rgba(193, 219, 227, 0.6);
  padding: 10px;
- box-shadow: 2px 2px 15px rgb(180, 180, 180);
- 
-}
+ background-color: var(--main-bg2-color);
+ border-top:3px solid var(--main-txt3-color);
+ border-left: 2px solid var(--main-bg1-color);
+ border-right: 2px solid var(--main-bg1-color);
+ }
 
 .portfolio-conatnier button {
-    background-color: ;
     width: 90px;
     height: 30px;
-    background-color: rgba(255, 202, 58, 0.5);
-    border-style: none;
-}
-.portfolio-conatnier button::hover{
-    botton-up:
+    padding: 5px;
+    background-color:var(--main-bg2-color);
 }
 
 h4 {
-    display:inline;
-    background-color: rgba(193, 219, 227, 0.6);
-    padding-left:10px ;
-    padding-top: 5px;
-    padding-right:10px;
+    display:inline-block;
+    margin-top:px;
+    color: var(--main-txt3-color);
+    border-bottom:2px solid var(--main-txt3-color);
 }
 
 h3{
-    font-size: 50px;
-    text-shadow: 5px 5px 5px rgba(192,192,192,1);
-    color: rgba(255, 79, 121, 6);
-    margin:10px;
-    margin-bottom: 60px;
-    margin-top: 50px;
+    font-size: 40px;
+    color: var(--main-txt1-color);
+   margin: 30px 30px 70px ;
+    
+}
+
+.git-icon{
+    height:12px ;
 }
 
 /* kapcsolat tartásos rész*/
 
-.contact {
-    background-image: url("../img/continent.png") ;
-    background-size: cover;
-    background-position: -top;
-    background-position: 0px 60px;
-    background-repeat: no-repeat
-
+.contact{
+    background-color: var(--main-bg2-color);
+    padding-bottom: 30px;
 }
 
-.contact-contanier {
-display: grid;
-grid-template-columns: auto;
-justify-content: center;
-padding-bottom: 100px;
+.contact-contanier{
+   display: flex;
+   flex-direction: column;
+   align-items:center;
 }
 
-.contact-contanier textarea , input {
-background-color: rgba(255, 79, 121, 0.6);
-border-style: solid;
-border-color: rgba(39, 1, 61, 0.5);
-justify-content: center;
-height:20px;
-margin:10px;
-min-width:200px ;
-}
 
-.msg{
-    min-height: 80px;
-    resize: vertical;
-    width: 200px;
-    }
-
-
-.contact-contanier button {
-background-color: rgba(255, 202, 58, 0.5);
-border-style: none;
-color: #27013D;
-margin-left:10px;
-max-width: auto;
-}
+/* From uiverse.io by @alexruix */
+.input-group {
+    position: relative;
+    margin:10px;
+   }
+   
+   .input {
+    border: solid 1.5px var(--main-txt1-color);
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--main-txt3-color);
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .user-label {
+    position: absolute;
+    left: 15px;
+    color: var(--main-txt1-color);
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .input:focus, input:valid {
+    outline: none;
+    border: 1.5px solid var(--main-txt1-color);
+   }
+   
+   .input:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.9);
+    background-color: var(--main-bg2-color);
+    padding: 0 .2em;
+    color: var(--main-txt1-color);
+   }
 
 /* footer stílus*/
 
 footer{
     text-align: center;
     font-size: 10px;
-    background-color: #27013D;
+    background-color: var(--main-bg1-color);
     padding-top: 30px;
     padding-bottom:30px;
 }
@@ -182,7 +256,7 @@ footer{
     .p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
         display: grid ;
         grid-template-columns: auto auto;
-        background-color:rgba(193, 219, 227, 0.5);
+        background-color:var(--main-bg2-color);
         justify-content: :center;
         align-content: center;
     }
@@ -199,6 +273,8 @@ footer{
     }
     .kepessegek {
         grid-area: kepessegek;
+        
+
     }
     #home {
         display: grid;
@@ -225,9 +301,12 @@ footer{
     grid-area: D;
 }
     .p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
+        background-color: var(--main-bg2-color);
+        border-top:3px solid var(--main-txt3-color);
+        border-left: 2px solid var(--main-bg1-color);
+        border-right: 2px solid var(--main-bg1-color);
         display: grid ;
         grid-template-columns: auto auto;
-        background-color:rgba(193, 219, 227, 0.5);
         grid-column-gap: 20px;
         grid-template-areas: 
         "A B"
@@ -237,7 +316,7 @@ footer{
     }
 
     h3{
-        font-size: 80px;
+        font-size: 50px;
         margin-top: 80px;
         margin-bottom: 70px;
     }
