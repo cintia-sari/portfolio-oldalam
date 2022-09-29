@@ -107,6 +107,7 @@ main {
     padding:12px;
     cursor: pointer; 
     width: 150px; 
+    transition: 0.4s;
 }
 
 .button:hover{
@@ -205,6 +206,7 @@ flex-wrap: wrap;
 .portfolio-conatnier button {
     margin:10px;
     background-color:var(--main-bg2-color);
+    
 }
 
 h4 {
@@ -347,6 +349,10 @@ footer{
 }
 
 @media screen and (min-width: 960px) {
+    
+    #home {
+        flex-direction: row; 
+    }
    
 }
 
