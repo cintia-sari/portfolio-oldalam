@@ -130,21 +130,31 @@ main {
 
 /*navigációs menü*/
 
+
 #menu__toggle{
-    visibility: hidden; // elrejtés és további lehetőségek display: none; vagy opacity:0//
+    visibility: hidden; /* elrejtés és további lehetőségek display: none; vagy opacity:0*/
     
+}
+
+.menu{
+    display: flex;
+    background-color: var(--main-bg2-color);
+    height: 50px ;
+    width: 100%;
+    position: fixed;
 }
 
 .hamburger-button{
     display: flex;
     align-items: center;
     position: fixed;
-    top: 30px;
+    top:24px;
     left: 30px;
     width: 40px;
     height: 40px;
     cursor: pointer;
     z-index: 1;
+    
 }
 
 .hamburger-lines,
@@ -155,7 +165,7 @@ main {
     width: 100%;
     height: 3px;
     background-color: var(--main-txt2-color);
-
+    transition-duration: 0.2s;
 }
 
 .hamburger-lines::before{
@@ -177,11 +187,13 @@ main {
     text-align: center;
     visibility: hidden;
    transition-duration: 0.3s;
-    
+   top: -110%;
+   transition-duration: 0.3s;
 }
 
 #menu__toggle:checked ~ .menu-box{
     visibility: visible;
+    top:0;
 }
 
 #menu__toggle:checked ~ .hamburger-button .hamburger-lines{
@@ -203,11 +215,11 @@ main {
 
 
 
-.nav-menu a {
+.menu a {
     font-weight: 900;
 }
 
-.nav-menu a:after {
+.menu a:after {
 content: '';
 width: 0px;
 height: 2px;
@@ -216,16 +228,16 @@ background-color: var(--main-txt1-color);
 transition: 300ms;
 
 }
-.nav-menu a:hover::after{
+.menu a:hover::after{
     width: 100%;
 }
 
-.nav-menu a:hover {
+.menu a:hover {
     color: var(--main-txt1-color);
 }
 
 
-.nav-menu a {
+.menu a {
     float: center;
     display: inline-block;
     text-align: center;
@@ -394,16 +406,41 @@ footer{
     justify-content: center;
     }
 
-    /*.nav-menu {
 
-        overflow: hidden;
-        background-color: var(--main-bg1-color);
-        position:sticky;
-        top:0;
-        }*/
-    .hamburger-lines{
+    /*.menu-box{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        padding: 60px 0 ;
+        margin: 0;
+        background: var(--main-bg2-color);
+        text-align: center;
+        visibility: hidden;
+       transition-duration: 0.3s;
+       top: -110%;
+       transition-duration: 0.3s;
+    }*/
 
-    }
+    .hamburger-button {
+        visibility: hidden;
+      }
+    
+      .menu__box  {
+        visibility: visible;
+        top: 0;
+        transition-property: none;
+      }
+    
+      .hamburger-lines,
+      .hamburger-lines::before,
+      .hamburger-lines::after {
+        transition-property: none;
+      }
+      
+   
+
+  
 
     .p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
         min-width: 500px;
@@ -419,6 +456,7 @@ footer{
         min-width: 500px;
     }
 }
+
 
 
 @media screen and (min-width: 960px) {
