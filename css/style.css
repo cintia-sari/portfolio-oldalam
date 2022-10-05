@@ -149,13 +149,14 @@ main {
     align-items: center;
     position: fixed;
     top:24px;
-    left: 30px;
+    right: 30px;
     width: 40px;
     height: 40px;
     cursor: pointer;
     z-index: 1;
     
 }
+
 
 .hamburger-lines,
 .hamburger-lines::before,
@@ -188,7 +189,6 @@ main {
     visibility: hidden;
    transition-duration: 0.3s;
    top: -110%;
-   transition-duration: 0.3s;
 }
 
 #menu__toggle:checked ~ .menu-box{
@@ -209,6 +209,12 @@ main {
 
 #menu__toggle:checked ~ .hamburger-button .hamburger-lines:after{
    display: none;
+}
+
+#menu__toggle:hover ~ .hamburger-button .hamburger-lines,
+#menu__toggle:hover ~ .hamburger-button .hamburger-lines:before,
+#menu__toggle:hover ~ .hamburger-button .hamburger-lines:after{
+    background-color: var(--main-txt1-color);
 }
 
 
@@ -238,13 +244,13 @@ transition: 300ms;
 
 
 .menu a {
-    float: center;
+    float:center;
     display: inline-block;
     text-align: center;
-    padding: 14px 30px;
+    padding: 50px 30px;
     text-decoration:none;
     text-decoration: bold;
-    font-size: 20px;
+    font-size: 40px;
     color: var(--main-txt3-color);
     transition: 0.3s;  
 }
@@ -426,16 +432,32 @@ footer{
         visibility: hidden;
       }
     
-      .menu__box  {
+      .menu-box  {
+        display:flex;
         visibility: visible;
         top: 0;
         transition-property: none;
+        padding:0;
+        justify-content: end;
+        height:50px;
+  
       }
     
       .hamburger-lines,
       .hamburger-lines::before,
       .hamburger-lines::after {
         transition-property: none;
+      }
+
+      }
+      .menu a {
+        font-size: 20px;
+        padding: 9px 30px;
+        transition-property: none;
+      }
+
+      .menu li::marker{
+        font-size: 0;
       }
       
    
@@ -455,7 +477,6 @@ footer{
     .input {
         min-width: 500px;
     }
-}
 
 
 
