@@ -108,7 +108,9 @@ main {
     padding:12px;
     cursor: pointer; 
     width: 150px; 
-    transition: 0.4s;
+    transition: 0.1s;
+    font-size: large;
+    font-weight:900;
 }
 
 .button:hover{
@@ -122,7 +124,7 @@ main {
     }
    
     .button:active {
-        transform: scale(0.95);
+        transform: scale(0.90);
        }
 
    
@@ -261,9 +263,12 @@ transition: 300ms;
 
 .portfolio {
     background-color:var(--main-bg1-color);
+  
 }
 .portfolio-kep {
-    max-height: 180px;
+    max-width: 100%;
+    max-height: 300px;
+    
 }
 
 .nev {
@@ -276,6 +281,7 @@ color: var(--main-txt3-color);
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
+flex-direction: row;
 }
 
 
@@ -287,12 +293,33 @@ flex-wrap: wrap;
  border-right: 3px solid rgb(42, 39, 39);
  max-width: 300px;
  margin: 15px;
+ display: flex;
+ flex-direction: column;
  }
 
-.portfolio-conatnier button {
+ .portfolio-button-contanier{
+    display: flex;
+    justify-content: center;
+    justify-content:space-around;
+ }
+
+
+ .portfolio-conatnier  button {
     margin:10px;
     background-color:var(--main-bg2-color);
-    
+}
+
+.portfolio-conatnier .button:first-of-type{
+    background-color: var(--main-txt1-color);
+    color: var(--main-bg1-color);
+    border-color: var(--main-txt1-color);
+    transition: 00.3s;
+}
+
+.portfolio-conatnier .button:first-of-type:hover{
+    background-color: rgba(78, 207, 239, 0.64);
+    color: var(--main-bg1-color);
+    border-color: rgba(78, 207, 239, 0.609);
 }
 
 h4 {
@@ -343,7 +370,7 @@ h2{
     padding-bottom: 30px;
 }
 
-.contact-contanier{
+ .contact-contanier{
    display: flex;
    flex-direction: column;
    align-items:center;
@@ -351,9 +378,10 @@ h2{
 
 
 .input-group {
-    position: relative;
+    position: relative; 
     margin:10px;
    }
+
    
    .input {
     border: solid 1.5px var(--main-txt1-color);
@@ -459,13 +487,16 @@ footer{
 
     }
 
-    .portfolio-conatnier{
-        flex-wrap: wrap;
-        }
+
 
     .input {
         min-width: 500px;
     }
+
+    .portfolio-button-contanier{
+      margin-left:15%;
+      margin-right: 15%;
+     }
 }
 
 

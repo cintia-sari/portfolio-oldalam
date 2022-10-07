@@ -42,72 +42,79 @@
     </header>
  
     <main class="sticky-contanier"> 
-        <section class="kepessegek-contanier">
-            <class class="kepessegek">
-                <img class="kepessegek-meret" src="img/html.svg" alt="HTML5" ></img>
+        <div class="kepessegek-contanier">
+            <div class="kepessegek">
+                <img class="kepessegek-meret" src="img/html.svg" alt="HTML5" >
                 <img class="kepessegek-meret" src="img/css.svg" alt="CSS">
                 <img class="kepessegek-meret" src="img/js.svg" alt="JavaScript">
-                <img class="kepessegek-meret" src="img/py.svg"  alt="Pyton"></img>
-            </class>
+                <img class="kepessegek-meret" src="img/py.svg"  alt="Pyton">
+            </div>
         <button class="button"><i class="fa fa-download"></i> Download CV</button>
-        </section>
+        </div>
       
         <section id="portfolio" class="portfolio">
             <h3 class="portfolio-cim">Portfolio:</h3>
            <div class="portfolio-conatnier">
-            <div class="p1con">
                 <div class="p1">
                     <h4>Portfolio name:</h4>
                     <img class="portfolio-kep" src="./img/comingsoon.png" alt="">
                     <h5 class="leiras">Description:</h5>
                     <p class="szoveg">Short story of my project.</p>                       
-                    <button class="button">Open Project</button>
-                    <button class="button"><i class="fa-brands fa-github"></i> REPO</button></div>
+                    <div class="portfolio-button-contanier">
+                        <button class="button">Open Project</button>
+                        <button class="button"><i class="fa-brands fa-github"></i> REPO</button>
+                    </div>
                 </div>
-                <div class="p2con">
-                    <div class="p2">
+                <div class="p2">
                         <h4>Portfolio name:</h4>
                         <img class="portfolio-kep" src="./img/comingsoon.png" alt="">
                         <h5 class="leiras">Description:</h5>
-                        <p class="szoveg">Short story of my project.</p>                       
-                        <button  class="button">Open Project</button>
-                        <button  class="button"><i class="fa-brands fa-github"></i> REPO</button></div>
-                    </div>
-                    <div class="p3con">
-                        <div class="p3">
+                        <p class="szoveg">Short story of my project.</p>   
+                        <div class="portfolio-button-contanier">                    
+                            <button  class="button">Open Project</button>
+                            <button  class="button"><i class="fa-brands fa-github"></i> REPO</button>
+                        </div>
+                </div>
+                   
+                    <div class="p3">
                             <h4>Portfolio name:</h4>
                             <img class="portfolio-kep" src="./img/comingsoon.png" alt="">
                             <h5 class="leiras">Description:</h5>
-                            <p class="szoveg">Short story of my project.</p>                            
-                            <button class="button">Open Project</button>
-                            <button class="button"><i class="fa-brands fa-github"></i> REPO</button></div>
+                            <p class="szoveg">Short story of my project.</p> 
+                            <div class="portfolio-button-contanier">                           
+                                <button class="button">Open Project</button>
+                                <button class="button"><i class="fa-brands fa-github"></i> REPO</button>
+                            </div>
                         </div>
-                        <div class="p4con">
-                            <div class="p4">
+                        <div class="p4">
                                 <h4>Portfolio name:</h4>
                                 <img class="portfolio-kep" src="./img/comingsoon.png" alt="">
                                 <h5 class="leiras">Description:</h5>
-                                <p class="szoveg">Short story of my project.</p>                       
-                                <button class="button">Open Project</button>
-                                <button class="button"><i class="fa-brands fa-github"></i> REPO</button></div>
+                                <p class="szoveg">Short story of my project.</p> 
+                                <div class="portfolio-button-contanier">                     
+                                    <button class="button">Open Project</button>
+                                    <button class="button"><i class="fa-brands fa-github"></i> REPO</button>
+                                </div>
                             </div>
-                                <div class="p5con">
-                                    <div class="p5">
+                            <div class="p5">
                                         <h4>Portfolio name:</h4>
                                         <img class="portfolio-kep" src="./img/comingsoon.png" alt="">
                                         <h5 class="leiras">Description:</h5>
-                                        <p class="szoveg">Short story of my project.</p>                       
-                                        <button class="button">Open Project</button>
-                                        <button class="button"><i class="fa-brands fa-github"></i> REPO</button></div>
+                                        <p class="szoveg">Short story of my project.</p>  
+                                        <div class="portfolio-button-contanier">                     
+                                            <button class="button">Open Project</button>
+                                            <button class="button"><i class="fa-brands fa-github"></i> REPO</button>
+                                        </div>
                                     </div>
-                                <div class="p6con">
-                                    <div class="p6">
+                                 <div class="p6">
                                         <h4>Portfolio name:</h4>
                                         <img class="portfolio-kep" src="./img/comingsoon.png" alt="">
                                         <h5 class="leiras">Description:</h5>
-                                        <p class="szoveg">Short story of my project.</p>                       
-                                        <button class="button">Open Project</button>
-                                        <button class="button"><i class="fa-brands fa-github"></i> REPO</button></div>
+                                        <p class="szoveg">Short story of my project.</p>
+                                        <div class="portfolio-button-contanier">                       
+                                            <button class="button">Open Project</button>
+                                            <button class="button"><i class="fa-brands fa-github"></i> REPO</button>
+                                        </div>
                                     </div>
 
         </div>
@@ -120,7 +127,6 @@
                 <div class="input-group">
                     <input 
                         required=""
-                        type="text"
                         name="name"
                         id="name-id"
                         autocomplete="off"
@@ -132,15 +138,13 @@
                         required=""
                         autocomplete="off"
                         class="input"
-                        type="text"
                         name="name"
                         id="email-id">
                     <label class="user-label" for="email-id">Your E-mail:</label>
                 </div>
                 <div class="input-group">
                     <textarea
-                    required=""
-                    type="text" 
+                    required="" 
                     name="message"
                     autocomplete="off"
                     class="input"  ></textarea>
