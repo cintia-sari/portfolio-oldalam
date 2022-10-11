@@ -30,8 +30,7 @@ textarea {
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding-top: 60px;
     background-color:var(--main-bg1-color) ;
     background-size: cover;
 
@@ -48,6 +47,7 @@ main {
 
 .kep-meret {
     max-width: 250px;
+   
     }
    
 .kepessegek-meret{
@@ -108,6 +108,7 @@ main {
     padding:12px;
     cursor: pointer; 
     width: 150px; 
+    border-radius: 1rem;
     transition: 0.1s;
     font-size: large;
     font-weight:900;
@@ -345,7 +346,7 @@ h5{
 h3{
     font-size: 40px;
     color: var(--main-txt1-color);
-   margin: 30px 30px 70px ;
+   margin: 30px 100px 70px ;
     
 }
 h1{

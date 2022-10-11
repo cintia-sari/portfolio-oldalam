@@ -16,7 +16,7 @@
     <nav class="menu">
         <input type="checkbox" name="hamburger" id="menu__toggle">
         <label for="menu__toggle" class="hamburger-button">
-            <span class="hamburger-lines"></span>  
+        <span class="hamburger-lines"></span>  
         </label>
         <ul class="menu-box">
             <li><a href="#home">Home</a></li>
@@ -37,7 +37,8 @@
             <div class="main-icons"><a href="#" class="fa-brands fa-github"></a>
                 <a href="#" class="fa-brands fa-linkedin"></a></div>
         </div>    
-        <p class="keprolam"><img class="kep-meret" src="./img/én.png" alt=""></p>
+        <img class="kep-meret keprolam" src="./img/én.png" alt="">
+  
      
     </header>
  
@@ -126,6 +127,7 @@
              <form action="https://formspree.io/f/meqdjqkl" method="post" class="contact-contanier">
                 <div class="input-group">
                     <input 
+                        type="text"
                         required=""
                         name="name"
                         id="name-id"
@@ -135,10 +137,11 @@
                 </div>
                 <div class="input-group">
                     <input 
+                        type="email"
                         required=""
                         autocomplete="off"
                         class="input"
-                        name="name"
+                        name="E-mail"
                         id="email-id">
                     <label class="user-label" for="email-id">Your E-mail:</label>
                 </div>
