@@ -9,6 +9,10 @@
 
 /*egész doksi*/
 html{
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    resize: none;
     scroll-behavior: smooth;
 }
 body {
@@ -71,6 +75,7 @@ main {
     padding-top:30px;
     padding-bottom: 30px;
     background-color: var(--main-bg2-color);
+    
 
 }
 
@@ -103,7 +108,7 @@ main {
     color: var(--main-txt3-color);
     font-size: 50px;
     text-decoration: none;
-    text-shadow: 4px 4px 4px black;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 .main-icons a:hover{
     color:var(--main-txt1-color);
@@ -249,7 +254,7 @@ main {
 
 
 .menu a {
-    text-shadow: 4px 4px 4px black;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.297);
     
 }
 
@@ -371,20 +376,20 @@ h3{
     font-size: 40px;
     color: var(--main-txt1-color);
    margin: 30px 100px 70px ;
-   text-shadow: 4px 4px 4px black;
+   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.308);
     
 }
 h1{
     
     font-size: 50px;
     font-weight: 900;
-    text-shadow: 4px 4px 4px black;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 h2{
     font-size: 45px;
     font-weight: 900;
-    text-shadow: 4px 4px 4px black;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.305);
 }
 
 .git-icon{
@@ -454,6 +459,9 @@ footer{
     padding-bottom:30px;
 }
   
+footer div {
+    margin:20px
+}
 /*kicsordulásos kikötést tenni*/ ;
 
 
