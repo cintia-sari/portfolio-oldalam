@@ -58,20 +58,23 @@
         </div>
       
         <section id="portfolio" class="portfolio">
-            <h3 class="portfolio-cim">Exam preparation</h3>
+            <h3 class="portfolio-cim">Portfolio:</h3>
            <div class="portfolio-conatnier">
-                <div class="portfoli-div">
-                    <h4>Portfolio name:</h4>
-                    <img class="portfolio-kep" src="./img/examPreparation.png" alt="">
-                    <h5 class="leiras">Description:</h5>
-                    <p class="szoveg">Short story of my project.</p>                       
-                    <div class="portfolio-button-contanier">
-                        <button class="button">Open Project</button>
-                        <button class="button"><i class="fa-brands fa-github"></i> REPO</button>
+                <div class="portfolio-valami">
+                    <h4>Exam preparation:</h4>
+                    <div class="portfoli-div">
+                        <img class="portfolio-kep" src="./img/examPreparation.png" alt="">
+                        <h5 class="leiras">Description:</h5>
+                        <p class="szoveg">Short story of my project.</p>                       
+                        <div class="portfolio-button-contanier">
+                            <button class="button">Open Project</button>
+                            <button class="button"><i class="fa-brands fa-github"></i> REPO</button>
+                        </div>
                     </div>
                 </div>
-                <div class="portfoli-div">
-                        <h4>Portfolio name:</h4>
+                <div class="portfolio-valami">
+                    <h4>Gázpartner 2000 Kft. website:</h4>
+                    <div class="portfoli-div">
                         <img class="portfolio-kep" src="./img/gázpartner2000Kft.png" alt="">
                         <h5 class="leiras">Description:</h5>
                         <p class="szoveg">Short story of my project.</p>   
@@ -79,10 +82,11 @@
                             <button  class="button">Open Project</button>
                             <button  class="button"><i class="fa-brands fa-github"></i> REPO</button>
                         </div>
+                    </div>
                 </div>
-                   
-                <div class="portfoli-div">
-                        <h4>Portfolio name:</h4>
+                <div class="portfolio-valami">
+                    <h4>Eat the pinguin:</h4>
+                    <div class="portfoli-div">
                         <img class="portfolio-kep" src="./img/eatThePinguin.png" alt="">
                         <h5 class="leiras">Description:</h5>
                         <p class="szoveg">Short story of my project.</p> 
@@ -90,9 +94,11 @@
                             <button class="button">Open Project</button>
                             <button class="button"><i class="fa-brands fa-github"></i> REPO</button>
                         </div>
+                    </div>
                 </div>
-                <div class="portfoli-div">
-                        <h4>Portfolio name:</h4>
+                <div class="portfolio-valami">
+                    <h4>Weather web app:</h4>
+                    <div class="portfoli-div">
                         <img class="portfolio-kep" src="./img/weatherWebApp.png" alt="">
                         <h5 class="leiras">Description:</h5>
                         <p class="szoveg">Short story of my project.</p> 
@@ -100,7 +106,8 @@
                             <button class="button">Open Project</button>
                             <button class="button"><i class="fa-brands fa-github"></i> REPO</button>
                         </div>
-                </div>
+                    </div>
+                </div>  
                            
             </div>
         </section>
@@ -108,38 +115,44 @@
         <section id="contact" class="contact">
             <h3>Contact:</h3>
             
-             <form action="https://formspree.io/f/meqdjqkl" method="post" class="contact-contanier">
-                <div class="input-group">
-                    <input 
-                        type="text"
-                        required=""
-                        name="name"
-                        id="name-id"
-                        autocomplete="off"
-                        class="input">
-                    <label class="user-label" for="name-id">Your Name:</label>
-                </div>
-                <div class="input-group">
-                    <input 
-                        type="email"
-                        required=""
-                        autocomplete="off"
-                        class="input"
-                        name="E-mail"
-                        id="email-id">
-                    <label class="user-label" for="email-id">Your E-mail:</label>
-                </div>
-                <div class="input-group">
-                    <textarea
-                    required="" 
-                    name="message"
-                    autocomplete="off"
-                    class="input"  ></textarea>
-                    <label class="user-label">Message:</label>
-                </div>
-                <button class="button" type="submit" value="SUBMIT">SUBMIT</button>
-            
-             </form>
+            <div class="email-box">
+                <div class="email">
+                    <form action="#" method="post" class="contact-contanier">
+                        <div class="input-group">
+                            <input 
+                                required
+                                type="text"
+                                name="name"
+                                id="name-id"
+                                autocomplete="off"
+                                class="input">
+                                <label class="user-label" for="name-id">Your Name:</label>
+                        </div>
+                        <div class="input-group">
+                            <input 
+                                required
+                                autocomplete="off"
+                                class="input"
+                                type="email"
+                                name="name"
+                                id="email-id">
+                                <label class="user-label" for="email-id">Your E-mail:</label>
+                        </div>
+                        <div class="input-group">
+                                <textarea
+                                required
+                                name="message"
+                                autocomplete="off"
+                                class="input"
+                                ></textarea>
+                                <label class="user-label">Message:</label>
+                        </div>
+                        <div class="email-button-div">
+                            <button class="button email-button" type="submit" value="SUBMIT">SUBMIT</button>  
+                        </div>
+                    </form>
+                </div>  
+            </div>`
             
         </section>
     </main>
