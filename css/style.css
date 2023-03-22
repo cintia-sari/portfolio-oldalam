@@ -315,13 +315,14 @@ flex-direction: row;
 }
 
 
-.p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
+.portfoli-div {
  padding: 10px;
  background-color: var(--main-bg2-color);
  border-top:3px solid var(--main-txt3-color);
  border-left: 3px solid rgb(42, 39, 39);
  border-right: 3px solid rgb(42, 39, 39);
  max-width: 300px;
+ max-width: 500px;
  margin: 15px;
  display: flex;
  flex-direction: column;
@@ -513,15 +514,7 @@ footer div {
       .menu li::marker{
         font-size: 0;
       }
-      
-   
-
-  
-
-    .p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
-        min-width: 500px;
-        margin:30px;
-
+    
     }
 
 
@@ -551,10 +544,6 @@ footer div {
 
 
 @media screen and (min-width: 1140px){
-
-    .p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
-        min-width: 600px;
-    }
 
     .input {
         min-width: 600px;
