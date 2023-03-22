@@ -21,6 +21,7 @@
         </label>
         <ul class="menu-box">
             <li><a href="#home">Home</a></li>
+            <li><a  href="#about-me">About me</a></li>
     
             <li><a  href="#portfolio">Portfolio</a></li>
         
@@ -28,32 +29,46 @@
         </ul>
     </nav>
     <header id="home">
+        <img class="kep-meret keprolam" src="./img/2.png" alt="">
         <div>
             <h1 class="welcome">
                                Welcome to my portfolio website!
             </h1>
             <h2 class="nev">
-                            I'm Cintia Sári a Full Stack Developer.
+                            I'm Cintia Sári a Frontend Developer.
             </h2>
-            <div class="main-icons"><a href="#" class="fa-brands fa-github"></a>
-                <a href="#" class="fa-brands fa-linkedin"></a></div>
-        </div>    
-        <img class="kep-meret keprolam" src="./img/én.png" alt="">
+            <div class="main-icons">
+                <a  href="https://github.com/cintia-sari" target="_blank" class="fa-brands fa-github"></a>
+                <a href="https://www.linkedin.com/in/cintia-sari-6a3b99223/" target="_blank" class="fa-brands fa-linkedin"></a>
+            </div>
+            <div class="kepessegek">
+                <button class="button"><i class="fa fa-download"></i> Download CV</button>
+            </div>
+            </div>    
+        
   
      
     </header>
  
     <main class="sticky-contanier">
-        <div class="kepessegek-contanier">
-            <h3>Skills:</h3>
+        <div id="about-me" class="kepessegek-contanier">
+            <h3>About me:</h3>
             <div class="kepessegek">
                 <div><img class="kepessegek-meret" src="img/html.svg" alt="HTML5" ><h4> Html 5</h4></div>
                 <div><img class="kepessegek-meret" src="img/css.svg" alt="CSS"><h4>CSS 3</h4></div>
                 <div><img class="kepessegek-meret" src="img/js.svg" alt="JavaScript"><h4>JavaScript</h4></div>
+                <div><img class="kepessegek-meret" src="img/react.svg" alt="React"><h4>React</h4></div>
                 <div><img class="kepessegek-meret" src="img/py.svg"  alt="Pyton"><h4>Python</h4></div>
+                <div><img class="kepessegek-meret" src="img/git.svg"  alt="Pyton"><h4>Git</h4></div>
             </div>
-            <div class="kepessegek">
-                <button class="button"><i class="fa fa-download"></i> Download CV</button>
+            <div class="about-me-description-div">
+                <img class="about-me-img" src="./img/1.png" alt="SáriCintia">
+                <h5 class="about-me-text">
+                    <p class="quotation-mark">"</p> 1 éve döntöttem úgy, hogy megtanulok programozni. Ez töltötte ki mindenapjaimat és lett az
+                     én "főállásom". Elértem egy olyan szintet ahol már viszont egy vállalat oldalán szeretném tovább építeni
+                     a megszerzett tudásom. Keresem azt a céget ahol fontos a hosszútávú együttműködés és támogatnak
+                     a további fejlődésemben. <p class="quotation-mark">"</p>
+            </h5>
             </div>
         </div>
       
@@ -64,11 +79,15 @@
                     <h4>Exam preparation:</h4>
                     <div class="portfoli-div">
                         <img class="portfolio-kep" src="./img/examPreparation.png" alt="">
-                        <h5 class="leiras">Description:</h5>
-                        <p class="szoveg">Short story of my project.</p>                       
+                        <div class="technologies-div">
+                            <img class="technology" src="img/react.svg" alt="React">
+                            <img class="technology" src="img/html.svg" alt="HTML5" >
+                            <img class="technology" src="img/css.svg" alt="CSS">
+                            <img class="technology" src="img/js.svg" alt="JavaScript">
+                        </div>                     
                         <div class="portfolio-button-contanier">
-                            <button class="button">Open Project</button>
-                            <button class="button"><i class="fa-brands fa-github"></i> REPO</button>
+                            <a href="https://github.com/cintia-sari/exam-preparation-react" target="_blank"class="button">Open Project</a>
+                            <a href="https://cintia-sari.github.io/exam-preparation-react/" target="_blank" class="button"><i class="fa-brands fa-github"></i> REPO</a>
                         </div>
                     </div>
                 </div>
@@ -76,11 +95,14 @@
                     <h4>Gázpartner 2000 Kft. website:</h4>
                     <div class="portfoli-div">
                         <img class="portfolio-kep" src="./img/gázpartner2000Kft.png" alt="">
-                        <h5 class="leiras">Description:</h5>
-                        <p class="szoveg">Short story of my project.</p>   
+                        <div class="technologies-div">
+                            <img class="technology" src="img/html.svg" alt="HTML5" >
+                            <img class="technology" src="img/css.svg" alt="CSS">
+                            <img class="technology" src="img/js.svg" alt="JavaScript">
+                        </div> 
                         <div class="portfolio-button-contanier">                    
-                            <button  class="button">Open Project</button>
-                            <button  class="button"><i class="fa-brands fa-github"></i> REPO</button>
+                            <a href="https://github.com/cintia-sari/G-zparner-2000-kft" target="_blank"  class="button">Open Project</a>
+                            <a href="https://cintia-sari.github.io/G-zparner-2000-kft/" target="_blank" class="button"><i class="fa-brands fa-github"></i> REPO</a>
                         </div>
                     </div>
                 </div>
@@ -88,11 +110,14 @@
                     <h4>Eat the pinguin:</h4>
                     <div class="portfoli-div">
                         <img class="portfolio-kep" src="./img/eatThePinguin.png" alt="">
-                        <h5 class="leiras">Description:</h5>
-                        <p class="szoveg">Short story of my project.</p> 
+                        <div class="technologies-div">
+                            <img class="technology" src="img/html.svg" alt="HTML5" >
+                            <img class="technology" src="img/css.svg" alt="CSS">
+                            <img class="technology" src="img/js.svg" alt="JavaScript">
+                        </div>
                         <div class="portfolio-button-contanier">                           
-                            <button class="button">Open Project</button>
-                            <button class="button"><i class="fa-brands fa-github"></i> REPO</button>
+                            <a href="https://github.com/cintia-sari/EatThePinguin" target="_blank" class="button">Open Project</a>
+                            <a href="https://cintia-sari.github.io/EatThePinguin/" target="_blank" class="button"><i class="fa-brands fa-github"></i> REPO</a>
                         </div>
                     </div>
                 </div>
@@ -100,11 +125,14 @@
                     <h4>Weather web app:</h4>
                     <div class="portfoli-div">
                         <img class="portfolio-kep" src="./img/weatherWebApp.png" alt="">
-                        <h5 class="leiras">Description:</h5>
-                        <p class="szoveg">Short story of my project.</p> 
+                        <div class="technologies-div">
+                            <img class="technology" src="img/html.svg" alt="HTML5" >
+                            <img class="technology" src="img/css.svg" alt="CSS">
+                            <img class="technology" src="img/js.svg" alt="JavaScript">
+                        </div>
                         <div class="portfolio-button-contanier">                     
-                            <button class="button">Open Project</button>
-                            <button class="button"><i class="fa-brands fa-github"></i> REPO</button>
+                            <a href="https://github.com/cintia-sari/WeatherWebApp" target="_blank" class="button">Open Project</a>
+                            <a href="https://cintia-sari.github.io/WeatherWebApp/" target="_blank" class="button"><i class="fa-brands fa-github"></i> REPO</a>
                         </div>
                     </div>
                 </div>  
@@ -157,9 +185,17 @@
         </section>
     </main>
     <footer>
-        <div class="main-icons"><a href="#" class="fa-brands fa-github"></a>
-            <a href="#" class="fa-brands fa-linkedin"></a></div>
+        <div class="main-icons">
+            <a  href="https://github.com/cintia-sari" target="_blank" class="fa-brands fa-github"></a>
+            <a href="https://www.linkedin.com/in/cintia-sari-6a3b99223/" target="_blank" class="fa-brands fa-linkedin"></a>
+        </div>
     </div> 
+    <div class="footer-menu">
+        <a href="#home">Home</a>
+        <a  href="#about-me">About me</a>
+        <a  href="#portfolio">Portfolio</a>
+        <a  href="#contact">Contact</a>
+    </div>
         <div>
             Copyright ​&copy;​ 2022 Sári Cintia
         </div>
