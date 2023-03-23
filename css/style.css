@@ -453,9 +453,9 @@ h2 {
     font-size: 16px;
     padding: 10px 10px;
     color:var(--main-txt2-color);
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     border-style: none;
-    border: 2px solid var(--main-txt1-color);
+    border-bottom: 2px solid var(--main-txt1-color);
     outline: none;
     background: transparent;
  }
@@ -481,12 +481,17 @@ h2 {
  .input-group input:valid ~ label,
  .input-group textarea:focus ~ label,
  .input-group textarea:valid ~ label {
-    top: -10px;
+    top: -20px;
     left: 5px;
     font-size: 14px;
     color: var(--light-white-color);
     background-color: var(--main-bg1-color);
     padding: 0px 10px;
+ }
+
+ .input-group textarea:focus ~ label,
+ .input-group textarea:valid ~ label {
+    top: -10px;
  }
 
 textarea {
@@ -580,7 +585,7 @@ footer div {
     .portfolio-button-contanier{
       margin-left:15%;
       margin-right: 15%;
-     }
+    }
 
 }
 
