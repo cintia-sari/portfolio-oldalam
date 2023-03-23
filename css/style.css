@@ -1,5 +1,5 @@
-/*hivatkozások*/
-:root{
+/*colors*/
+:root {
     --main-bg1-color: rgb(8, 35, 51);
     --main-bg2-color: rgb(19, 58, 75);
     --main-txt1-color: rgb(78, 208, 239);
@@ -7,14 +7,17 @@
     --main-txt3-color: rgb(216, 216, 216);
 }
 
-/*egész doksi*/
-html{
+
+/*basic settings*/
+
+html {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
     resize: none;
     scroll-behavior: smooth;
 }
+
 body {
     min-width: 300px;
     font-family: 'Oswald', sans-serif;
@@ -23,146 +26,19 @@ body {
     margin: 0;
     background-color: var(--main-bg1-color);
 }
+
 textarea {
     font-family: 'Oswald', sans-serif;
 }
 
 
-/* nyitó oldal*/
-#home {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    padding-top: 60px;
-    background-color:var(--main-bg1-color) ;
-    background-size: cover;
+/*navigation menu*/
 
-
-}
-
-
-main {
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-
-
-.kep-meret {
-    max-width: 250px;
-   
-    }
-   
-.kepessegek-meret{
-    height: 60px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-    
-.kepessegek{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction:row;
-    margin-bottom: 20px;
-}
-
-.kepessegek-contanier {
-    padding-bottom: 30px;
-    background-color: var(--main-bg2-color);
-    
-
-}
-
-.kepessegek div {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 20px;
-    text-align: center;
-}
-
-.kepessegek div h4{
-    margin-top: 10px;
-    border-bottom: none;
-}
-.kepessegek-contanier .button {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-.main-icons{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.main-icons a {
-    margin-left: 15px;
-    margin-right: 15px;
-    color: var(--main-txt2-color);
-    font-size: 50px;
-    text-decoration: none;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
-}
-.main-icons a:hover{
-    color:var(--main-txt1-color);
-    text-decoration: none;
-}
-
-.user-label{
-    font-family: 'Oswald', sans-serif;
-}
-
-
-
-.button{
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    background-color: var(--main-bg2-color);
-    border:3px solid var(--main-txt2-color) ;
-    color:var(--main-txt2-color);
-    padding:12px;
-    cursor: pointer; 
-    width: 150px; 
-    transition: 0.1s;
-    font-size: large;
-    font-weight:900;
-    box-shadow: 2px 2px 2px black;
-}
-
-.button:hover{
-    background-color: var(--main-txt1-color);
-    border:3px solid var(--main-txt1-color) ;
-    color:var(--main-bg1-color);
-}
-    .button:active,
-    .button:hover {
-     outline: 0;
-    }
-   
-    .button:active {
-        transform: scale(0.90);
-       }
-
-   
-
-
-
-/*navigációs menü*/
-
-
-#menu__toggle{
+#menu__toggle {
     visibility: hidden; /* elrejtés és további lehetőségek display: none; vagy opacity:0*/
 }
 
-
-.menu{
+.menu {
     display: flex;
     background-color: var(--main-bg2-color);
     height: 50px ;
@@ -171,23 +47,21 @@ main {
     z-index: 2;
 }
 
-.hamburger-button{
+.hamburger-button {
     display: flex;
     align-items: center;
     position: fixed;
-    top:2px;
+    top: 2px;
     right: 30px;
     width: 40px;
     height: 40px;
     cursor: pointer;
-    z-index: 1;
-    
+    z-index: 1; 
 }
-
 
 .hamburger-lines,
 .hamburger-lines::before,
-.hamburger-lines::after{
+.hamburger-lines::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -196,15 +70,17 @@ main {
     transition-duration: 0.2s;
 }
 
-.hamburger-lines::before{
+.hamburger-lines::before {
     content: "";
     top:-10px;
 }
-.hamburger-lines::after{
+
+.hamburger-lines::after {
     content: "";
     top:10px;
 }
-.menu-box{
+
+.menu-box {
     display: block;
     position: fixed;
     width: 100%;
@@ -218,43 +94,38 @@ main {
    top: -110%;
 }
 
-#menu__toggle:checked ~ .menu-box{
+#menu__toggle:checked ~ .menu-box {
     visibility: visible;
     top:0;
 }
 
-.menu-box a::after ~ .menu-box{
+.menu-box a::after ~ .menu-box {
     visibility: hidden;
 }
 
-#menu__toggle:checked ~ .hamburger-button .hamburger-lines{
+#menu__toggle:checked ~ .hamburger-button .hamburger-lines {
     background-color: var(--main-txt1-color);
     transform: rotate(45deg);
 }
 
-#menu__toggle:checked ~ .hamburger-button .hamburger-lines:before{
+#menu__toggle:checked ~ .hamburger-button .hamburger-lines:before {
     background-color: var(--main-txt1-color);
     transform: rotate(90deg);
     top: 0;
 }
 
-#menu__toggle:checked ~ .hamburger-button .hamburger-lines:after{
+#menu__toggle:checked ~ .hamburger-button .hamburger-lines:after {
    display: none;
 }
 
 #menu__toggle:hover ~ .hamburger-button .hamburger-lines,
 #menu__toggle:hover ~ .hamburger-button .hamburger-lines:before,
-#menu__toggle:hover ~ .hamburger-button .hamburger-lines:after{
+#menu__toggle:hover ~ .hamburger-button .hamburger-lines:after {
     background-color: var(--main-txt1-color);
 }
 
-
-
-
-
 .menu a {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.297);
-    
 }
 
 .menu a:after {
@@ -264,16 +135,15 @@ height: 2px;
 display: block;
 background-color: var(--main-txt1-color);
 transition: 300ms;
-
 }
-.menu a:hover::after{
+
+.menu a:hover::after {
     width: 100%;
 }
 
 .menu a:hover {
     color: var(--main-txt1-color);
 }
-
 
 .menu a {
     font-size: 60px;
@@ -288,17 +158,134 @@ transition: 300ms;
     transition: 0.3s;  
 }
 
-/*portfolió rész */
 
-.portfolio {
+/* hero section*/
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    background-color:var(--main-bg1-color) ;
+    background-size: cover;
+}
+
+main {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-img {
+    max-width: 250px;
+}
+   
+.skills-img {
+    height: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+    
+.skills-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction:row;
+    margin-bottom: 20px;
+}
+
+.about-me-contanier {
+    padding-bottom: 30px;
+    background-color: var(--main-bg2-color);
+}
+
+.skills-div div {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+.skills-div div h4 {
+    margin-top: 10px;
+    border-bottom: none;
+}
+
+.about-me-contanier .button {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.social-media-icon {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.social-media-icon a {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: var(--main-txt2-color);
+    font-size: 50px;
+    text-decoration: none;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.social-media-icon a:hover {
+    color:var(--main-txt1-color);
+    text-decoration: none;
+}
+
+.user-label {
+    font-family: 'Oswald', sans-serif;
+}
+
+.button {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background-color: var(--main-bg2-color);
+    border:3px solid var(--main-txt2-color);
+    color:var(--main-txt2-color);
+    padding:12px;
+    cursor: pointer; 
+    width: 150px; 
+    transition: 0.1s;
+    font-size: large;
+    font-weight:900;
+    box-shadow: 2px 2px 2px black;
+}
+
+.button:hover {
+    background-color: var(--main-txt1-color);
+    border:3px solid var(--main-txt1-color);
+    color:var(--main-bg1-color);
+}
+
+.button:active,
+.button:hover {
+    outline: 0;
+}
+   
+.button:active {
+    transform: scale(0.90);
+}
+
+
+/*portfolio section */
+
+.portfolio-container {
     background-color:var(--main-bg1-color);
 }
 
-.portfolio-kep {
+.portfolio-img {
     max-width: 100%;
 }
 
-.nev {
+.hero-text {
     color:var(--main-txt2-color);
 }
 
@@ -310,17 +297,17 @@ justify-content: center;
 flex-wrap: wrap;
 }
 
-.portfolio-valami{
+.portfolio-card-container {
     min-width: 300px;
     max-width: 500px;
     margin:30px
 }
+
 .portfolio-conatnier div h4 {
     margin-top:60px;
     margin-left: 10px;
     margin-bottom: 5px;
 }
-
 
 .portfoli-div {
  background-color: var(--main-bg2-color);
@@ -334,26 +321,25 @@ flex-wrap: wrap;
     padding: 15px;
  }
 
- .portfolio-button-contanier{
+ .portfolio-button-contanier {
     display: flex;
     justify-content: center;
     justify-content:space-around;
  }
-
 
  .portfolio-conatnier  .button {
     margin:10px;
     background-color:var(--main-bg2-color);
 }
 
-.portfolio-conatnier .button:first-of-type{
+.portfolio-conatnier .button:first-of-type {
     background-color: var(--main-txt1-color);
     color: var(--main-bg1-color);
     border-color: var(--main-txt1-color);
     transition: 00.3s;
 }
 
-.portfolio-conatnier .button:first-of-type:hover{
+.portfolio-conatnier .button:first-of-type:hover {
     background-color: rgba(78, 207, 239, 0.64);
     color: var(--main-bg1-color);
     border-color: rgba(78, 207, 239, 0.609);
@@ -365,49 +351,48 @@ h4 {
     color: var(--main-txt2-color);
 }
 
-
-h3{
+h3 {
     font-size: 40px;
     color: var(--main-txt1-color);
     margin: 30px 100px 70px 10px ;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.308);
     padding-top:50px;
 }
-h1{
-    
+
+h1 {
     font-size: 50px;
     font-weight: 900;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
-h2{
+h2 {
     font-size: 45px;
     font-weight: 900;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.305);
 }
 
-.git-icon{
-    height:12px ;
+.git-icon {
+    height:12px;
 }
 
-.technologies-div{
+.technologies-div {
     margin: 10px;
 }
 
-.technology{
+.technology {
     height: 30px;
     padding-right: 10px;
     filter: invert(99%) sepia(2%) saturate(1%) hue-rotate(2deg) brightness(250%) contrast(91%);
 }
 
-.about-me-description-div{
+.about-me-description-div {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.about-me-text{
+.about-me-text {
     color:var(--main-txt2-color);
     min-width: 200px;
     max-width: 500px;
@@ -415,19 +400,19 @@ h2{
     margin:0 30px;
 }
 
-.quotation-mark{
+.quotation-mark {
     padding: 0;
     margin:0;
     display: inline;
 }
 
-.about-me-img{
+.about-me-img {
     min-width:300px;
     max-width: 400px;
 }
 
 
-/* kapcsolat tartásos rész*/
+/* contact section*/
 
 .email-box {
     position: relative;
@@ -438,7 +423,7 @@ h2{
     height: 500px;
  }
 
- .portfolio-conatnier{
+ .portfolio-conatnier {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -499,7 +484,7 @@ h2{
     padding: 0px 10px;
  }
 
- textarea{
+textarea {
    padding:5px 10px;
  }
 
@@ -513,9 +498,9 @@ h2{
  }
 
 
-/* footer stílus*/
+/* footer*/
 
-footer{
+footer {
     text-align: center;
     font-size: 10px;
     background-color: var(--main-bg1-color);
@@ -527,26 +512,23 @@ footer div {
     margin:20px
 }
 
-.footer-menu a{
+.footer-menu a {
     font-size: 15px;
     text-decoration: none;
     margin-left: 20px;
     color:var(--main-txt2-color);
 }
 
-.footer-menu a:hover{
+.footer-menu a:hover {
     color: var(--main-txt1-color)
 }
-/*kicsordulásos kikötést tenni*/ ;
 
-
-/*töréspontok beállítása*/
 
 @media screen and (min-width: 720px) {}
 
 
 @media screen and (min-width: 720px) {
-    #home{
+    #home {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -560,7 +542,7 @@ footer div {
         visibility: hidden;
       }
     
-      .menu-box  {
+    .menu-box {
         display:flex;
         visibility: visible;
         top: 0;
@@ -568,26 +550,23 @@ footer div {
         padding:0;
         justify-content: end;
         height:50px;
-  
       }
     
-      .hamburger-lines,
-      .hamburger-lines::before,
-      .hamburger-lines::after {
+    .hamburger-lines,
+    .hamburger-lines::before,
+    .hamburger-lines::after {
         transition-property: none;
-      }
+    }
 
-      
-      .menu a {
+    .menu a {
         font-size: 20px;
         padding: 9px 30px;
-        transition-property: none;
-        
+        transition-property: none; 
       }
 
-      .menu li::marker{
+    .menu li::marker {
         font-size: 0;
-      }
+    }
     
     .input {
         min-width: 500px;
@@ -597,7 +576,6 @@ footer div {
       margin-left:15%;
       margin-right: 15%;
      }
-
 
 }
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <script src="https://kit.fontawesome.com/59c97261ed.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="inedex.js"></script>
+    <script src="inedex.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,192 +13,174 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fontawesome.com/icons/github?s=solid&f=brands">
 </head>
-<body>
-    <nav class="menu">
-        <input type="checkbox" name="hamburger" id="menu__toggle">
-        <label for="menu__toggle" class="hamburger-button">
-        <span class="hamburger-lines"></span>  
-        </label>
-        <ul class="menu-box">
-            <li><a href="#home">Home</a></li>
-            <li><a  href="#about-me">About me</a></li>
-    
-            <li><a  href="#portfolio">Portfolio</a></li>
-        
-            <li><a  href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <header id="home">
-        <img class="kep-meret keprolam" src="./img/2.png" alt="">
-        <div>
-            <h1 class="welcome">
-                               Welcome to my portfolio website!
-            </h1>
-            <h2 class="nev">
-                            I'm Cintia Sári a Frontend Developer.
-            </h2>
-            <div class="main-icons">
+    <body>
+        <nav class="menu">
+            <input type="checkbox" name="hamburger" id="menu__toggle">
+            <label for="menu__toggle" class="hamburger-button">
+                <span class="hamburger-lines"></span>  
+            </label>
+            <ul class="menu-box">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <header id="home">
+            <img class="hero-img " src="./img/2.png" alt="">
+            <div>
+                <h1 >Welcome to my portfolio website!</h1>
+                <h2 class="hero-text">I'm Cintia Sári a Frontend Developer.</h2>
+                <div class="social-media-icon">
+                    <a  href="https://github.com/cintia-sari" target="_blank" class="fa-brands fa-github"></a>
+                    <a href="https://www.linkedin.com/in/cintia-sari-6a3b99223/" target="_blank" class="fa-brands fa-linkedin"></a>
+                </div>
+                <div>
+                    <button class="button"><i class="fa fa-download"></i> Download CV</button>
+                </div>
+            </div>    
+        </header>
+        <main class="sticky-contanier">
+            <div id="about-me" class="about-me-contanier">
+                <h3>About me:</h3>
+                <div class="skills-div">
+                    <div><img class="skills-img" src="img/html.svg" alt="HTML5" ><h4> Html 5</h4></div>
+                    <div><img class="skills-img" src="img/css.svg" alt="CSS"><h4>CSS 3</h4></div>
+                    <div><img class="skills-img" src="img/js.svg" alt="JavaScript"><h4>JavaScript</h4></div>
+                    <div><img class="skills-img" src="img/react.svg" alt="React"><h4>React</h4></div>
+                    <div><img class="skills-img" src="img/py.svg"  alt="Pyton"><h4>Python</h4></div>
+                    <div><img class="skills-img" src="img/git.svg"  alt="Pyton"><h4>Git</h4></div>
+                </div>
+                <div class="about-me-description-div">
+                    <img class="about-me-img" src="./img/1.png" alt="SáriCintia">
+                    <h5 class="about-me-text">
+                        " 1 éve döntöttem úgy, hogy megtanulok programozni. Ez töltötte ki mindenapjaimat és lett az
+                        én "főállásom". Elértem egy olyan szintet ahol már viszont egy vállalat oldalán szeretném tovább építeni
+                        a megszerzett tudásom. Keresem azt a céget ahol fontos a hosszútávú együttműködés és támogatnak
+                        a további fejlődésemben. "
+                    </h5>
+                </div>
+            </div>
+            <section id="portfolio" class="portfolio-container">
+                <h3 >Portfolio:</h3>
+                <div class="portfolio-conatnier">
+                    <div class="portfolio-card-container">
+                        <h4>Exam preparation:</h4>
+                        <div class="portfoli-div">
+                            <img class="portfolio-img" src="./img/examPreparation.png" alt="">
+                            <div class="technologies-div">
+                                <img class="technology" src="img/react.svg" alt="React">
+                                <img class="technology" src="img/html.svg" alt="HTML5" >
+                                <img class="technology" src="img/css.svg" alt="CSS">
+                                <img class="technology" src="img/js.svg" alt="JavaScript">
+                            </div>                     
+                            <div class="portfolio-button-contanier">
+                                <a href="https://github.com/cintia-sari/exam-preparation-react" target="_blank" class="button">Open Project</a>
+                                <a href="https://cintia-sari.github.io/exam-preparation-react/" target="_blank" class="button"><i class="fa-brands fa-github"></i> REPO</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card-container">
+                        <h4>Gázpartner 2000 Kft. website:</h4>
+                        <div class="portfoli-div">
+                            <img class="portfolio-img" src="./img/gázpartner2000Kft.png" alt="">
+                            <div class="technologies-div">
+                                <img class="technology" src="img/html.svg" alt="HTML5" >
+                                <img class="technology" src="img/css.svg" alt="CSS">
+                                <img class="technology" src="img/js.svg" alt="JavaScript">
+                            </div> 
+                            <div class="portfolio-button-contanier">                    
+                                <a href="https://github.com/cintia-sari/G-zparner-2000-kft" target="_blank"  class="button">Open Project</a>
+                                <a href="https://cintia-sari.github.io/G-zparner-2000-kft/" target="_blank" class="button"><i class="fa-brands fa-github"></i> REPO</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card-container">
+                        <h4>Eat the pinguin:</h4>
+                        <div class="portfoli-div">
+                            <img class="portfolio-img" src="./img/eatThePinguin.png" alt="">
+                            <div class="technologies-div">
+                                <img class="technology" src="img/html.svg" alt="HTML5" >
+                                <img class="technology" src="img/css.svg" alt="CSS">
+                                <img class="technology" src="img/js.svg" alt="JavaScript">
+                            </div>
+                            <div class="portfolio-button-contanier">                           
+                                <a href="https://github.com/cintia-sari/EatThePinguin" target="_blank" class="button">Open Project</a>
+                                <a href="https://cintia-sari.github.io/EatThePinguin/" target="_blank" class="button"><i class="fa-brands fa-github"></i> REPO</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card-container">
+                        <h4>Weather web app:</h4>
+                        <div class="portfoli-div">
+                            <img class="portfolio-img" src="./img/weatherWebApp.png" alt="">
+                            <div class="technologies-div">
+                                <img class="technology" src="img/html.svg" alt="HTML5" >
+                                <img class="technology" src="img/css.svg" alt="CSS">
+                                <img class="technology" src="img/js.svg" alt="JavaScript">
+                            </div>
+                            <div class="portfolio-button-contanier">                     
+                                <a href="https://github.com/cintia-sari/WeatherWebApp" target="_blank" class="button">Open Project</a>
+                                <a href="https://cintia-sari.github.io/WeatherWebApp/" target="_blank" class="button"><i class="fa-brands fa-github"></i> REPO</a>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+            </section>     
+            <section id="contact">
+                <h3>Contact:</h3>
+                <div class="email-box">
+                    <div class="email">
+                        <form action="#" method="post" class="contact-contanier">
+                            <div class="input-group">
+                                <input 
+                                    required
+                                    type="text"
+                                    name="name"
+                                    id="name-id"
+                                    autocomplete="off"
+                                    class="input">
+                                    <label class="user-label" for="name-id">Your Name:</label>
+                            </div>
+                            <div class="input-group">
+                                <input 
+                                    required
+                                    autocomplete="off"
+                                    class="input"
+                                    type="email"
+                                    name="name"
+                                    id="email-id">
+                                    <label class="user-label" for="email-id">Your E-mail:</label>
+                            </div>
+                            <div class="input-group">
+                                    <textarea
+                                    required
+                                    name="message"
+                                    autocomplete="off"
+                                    class="input"
+                                    ></textarea>
+                                    <label class="user-label">Message:</label>
+                            </div>
+                            <div class="email-button-div">
+                                <button class="button email-button" type="submit" value="SUBMIT">SUBMIT</button>  
+                            </div>
+                        </form>
+                    </div>  
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="social-media-icon">
                 <a  href="https://github.com/cintia-sari" target="_blank" class="fa-brands fa-github"></a>
                 <a href="https://www.linkedin.com/in/cintia-sari-6a3b99223/" target="_blank" class="fa-brands fa-linkedin"></a>
             </div>
-            <div class="kepessegek">
-                <button class="button"><i class="fa fa-download"></i> Download CV</button>
+            <div class="footer-menu">
+                <a href="#home">Home</a>
+                <a  href="#about-me">About me</a>
+                <a  href="#portfolio">Portfolio</a>
+                <a  href="#contact">Contact</a>
             </div>
-            </div>    
-        
-  
-     
-    </header>
- 
-    <main class="sticky-contanier">
-        <div id="about-me" class="kepessegek-contanier">
-            <h3>About me:</h3>
-            <div class="kepessegek">
-                <div><img class="kepessegek-meret" src="img/html.svg" alt="HTML5" ><h4> Html 5</h4></div>
-                <div><img class="kepessegek-meret" src="img/css.svg" alt="CSS"><h4>CSS 3</h4></div>
-                <div><img class="kepessegek-meret" src="img/js.svg" alt="JavaScript"><h4>JavaScript</h4></div>
-                <div><img class="kepessegek-meret" src="img/react.svg" alt="React"><h4>React</h4></div>
-                <div><img class="kepessegek-meret" src="img/py.svg"  alt="Pyton"><h4>Python</h4></div>
-                <div><img class="kepessegek-meret" src="img/git.svg"  alt="Pyton"><h4>Git</h4></div>
-            </div>
-            <div class="about-me-description-div">
-                <img class="about-me-img" src="./img/1.png" alt="SáriCintia">
-                <h5 class="about-me-text">
-                    <p class="quotation-mark">"</p> 1 éve döntöttem úgy, hogy megtanulok programozni. Ez töltötte ki mindenapjaimat és lett az
-                     én "főállásom". Elértem egy olyan szintet ahol már viszont egy vállalat oldalán szeretném tovább építeni
-                     a megszerzett tudásom. Keresem azt a céget ahol fontos a hosszútávú együttműködés és támogatnak
-                     a további fejlődésemben. <p class="quotation-mark">"</p>
-            </h5>
-            </div>
-        </div>
-      
-        <section id="portfolio" class="portfolio">
-            <h3 class="portfolio-cim">Portfolio:</h3>
-           <div class="portfolio-conatnier">
-                <div class="portfolio-valami">
-                    <h4>Exam preparation:</h4>
-                    <div class="portfoli-div">
-                        <img class="portfolio-kep" src="./img/examPreparation.png" alt="">
-                        <div class="technologies-div">
-                            <img class="technology" src="img/react.svg" alt="React">
-                            <img class="technology" src="img/html.svg" alt="HTML5" >
-                            <img class="technology" src="img/css.svg" alt="CSS">
-                            <img class="technology" src="img/js.svg" alt="JavaScript">
-                        </div>                     
-                        <div class="portfolio-button-contanier">
-                            <a href="https://github.com/cintia-sari/exam-preparation-react" target="_blank"class="button">Open Project</a>
-                            <a href="https://cintia-sari.github.io/exam-preparation-react/" target="_blank" class="button"><i class="fa-brands fa-github"></i> REPO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-valami">
-                    <h4>Gázpartner 2000 Kft. website:</h4>
-                    <div class="portfoli-div">
-                        <img class="portfolio-kep" src="./img/gázpartner2000Kft.png" alt="">
-                        <div class="technologies-div">
-                            <img class="technology" src="img/html.svg" alt="HTML5" >
-                            <img class="technology" src="img/css.svg" alt="CSS">
-                            <img class="technology" src="img/js.svg" alt="JavaScript">
-                        </div> 
-                        <div class="portfolio-button-contanier">                    
-                            <a href="https://github.com/cintia-sari/G-zparner-2000-kft" target="_blank"  class="button">Open Project</a>
-                            <a href="https://cintia-sari.github.io/G-zparner-2000-kft/" target="_blank" class="button"><i class="fa-brands fa-github"></i> REPO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-valami">
-                    <h4>Eat the pinguin:</h4>
-                    <div class="portfoli-div">
-                        <img class="portfolio-kep" src="./img/eatThePinguin.png" alt="">
-                        <div class="technologies-div">
-                            <img class="technology" src="img/html.svg" alt="HTML5" >
-                            <img class="technology" src="img/css.svg" alt="CSS">
-                            <img class="technology" src="img/js.svg" alt="JavaScript">
-                        </div>
-                        <div class="portfolio-button-contanier">                           
-                            <a href="https://github.com/cintia-sari/EatThePinguin" target="_blank" class="button">Open Project</a>
-                            <a href="https://cintia-sari.github.io/EatThePinguin/" target="_blank" class="button"><i class="fa-brands fa-github"></i> REPO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-valami">
-                    <h4>Weather web app:</h4>
-                    <div class="portfoli-div">
-                        <img class="portfolio-kep" src="./img/weatherWebApp.png" alt="">
-                        <div class="technologies-div">
-                            <img class="technology" src="img/html.svg" alt="HTML5" >
-                            <img class="technology" src="img/css.svg" alt="CSS">
-                            <img class="technology" src="img/js.svg" alt="JavaScript">
-                        </div>
-                        <div class="portfolio-button-contanier">                     
-                            <a href="https://github.com/cintia-sari/WeatherWebApp" target="_blank" class="button">Open Project</a>
-                            <a href="https://cintia-sari.github.io/WeatherWebApp/" target="_blank" class="button"><i class="fa-brands fa-github"></i> REPO</a>
-                        </div>
-                    </div>
-                </div>  
-                           
-            </div>
-        </section>
-               
-        <section id="contact" class="contact">
-            <h3>Contact:</h3>
-            
-            <div class="email-box">
-                <div class="email">
-                    <form action="#" method="post" class="contact-contanier">
-                        <div class="input-group">
-                            <input 
-                                required
-                                type="text"
-                                name="name"
-                                id="name-id"
-                                autocomplete="off"
-                                class="input">
-                                <label class="user-label" for="name-id">Your Name:</label>
-                        </div>
-                        <div class="input-group">
-                            <input 
-                                required
-                                autocomplete="off"
-                                class="input"
-                                type="email"
-                                name="name"
-                                id="email-id">
-                                <label class="user-label" for="email-id">Your E-mail:</label>
-                        </div>
-                        <div class="input-group">
-                                <textarea
-                                required
-                                name="message"
-                                autocomplete="off"
-                                class="input"
-                                ></textarea>
-                                <label class="user-label">Message:</label>
-                        </div>
-                        <div class="email-button-div">
-                            <button class="button email-button" type="submit" value="SUBMIT">SUBMIT</button>  
-                        </div>
-                    </form>
-                </div>  
-            </div>`
-            
-        </section>
-    </main>
-    <footer>
-        <div class="main-icons">
-            <a  href="https://github.com/cintia-sari" target="_blank" class="fa-brands fa-github"></a>
-            <a href="https://www.linkedin.com/in/cintia-sari-6a3b99223/" target="_blank" class="fa-brands fa-linkedin"></a>
-        </div>
-    </div> 
-    <div class="footer-menu">
-        <a href="#home">Home</a>
-        <a  href="#about-me">About me</a>
-        <a  href="#portfolio">Portfolio</a>
-        <a  href="#contact">Contact</a>
-    </div>
-        <div>
-            Copyright ​&copy;​ 2022 Sári Cintia
-        </div>
-    </footer>
-</body>
+            <div>Copyright ​&copy;​ 2022 Sári Cintia</div>
+        </footer>
+    </body>
 </html>
