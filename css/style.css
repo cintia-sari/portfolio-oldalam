@@ -254,7 +254,9 @@ main {
     transition: 0.1s;
     font-size: large;
     font-weight:900;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.297);
+    text-decoration: none;
+    text-align: center;
 }
 
 .button:hover {
@@ -327,7 +329,7 @@ flex-wrap: wrap;
 
  .portfolio-conatnier  .button {
     margin:10px;
-    background-color:var(--main-bg2-color);
+   
 }
 
 .portfolio-conatnier .button:first-of-type {
@@ -338,9 +340,9 @@ flex-wrap: wrap;
 }
 
 .portfolio-conatnier .button:first-of-type:hover {
-    background-color: rgba(78, 207, 239, 0.64);
-    color: var(--main-bg1-color);
-    border-color: rgba(78, 207, 239, 0.609);
+    background-color: rgba(78, 207, 239, 0.243);
+    color: var(--main-txt1-color);
+    border-color: rgba(78, 207, 239, 0.476);
 }
 
 h4 {
@@ -414,6 +416,7 @@ h2 {
 
 .contact-contanier{
     min-width: 250px;
+    margin-right: 25px;
 }
 
 .email-box {
