@@ -92,7 +92,6 @@ textarea {
     top: -110%;
 }
 
-
 #menu__toggle:checked ~ .menu-box {
     visibility: visible;
     top:0;
@@ -155,6 +154,7 @@ textarea {
     color: var(--main-txt2-color);
     font-weight: 900;  
 }
+
 
 /* hero section*/
 
@@ -548,7 +548,6 @@ footer div {
     justify-content: center;
     }
 
-
     .hamburger-button {
         visibility: hidden;
       }
@@ -561,7 +560,7 @@ footer div {
         padding:0;
         justify-content: end;
         height:50px;
-      }
+    }
     
     .hamburger-lines,
     .hamburger-lines::before,
