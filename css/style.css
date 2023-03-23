@@ -449,13 +449,14 @@ h2 {
 }
 
 .email .input-group input, textarea {
+    height: 28px;
     min-width: 100%;
     font-size: 16px;
     padding: 10px 10px;
     color:var(--main-txt2-color);
     margin-bottom: 50px;
     border-style: none;
-    border-bottom: 2px solid var(--main-txt1-color);
+    border: 2px solid var(--main-txt1-color);
     outline: none;
     background: transparent;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.297);
@@ -470,7 +471,7 @@ h2 {
 
 .email .input-group label {
     position: absolute;
-    top: 8px;
+    top: 13px;
     left: 8px;
     color: var(--main-txt1-color);
     font-size: 16px;
@@ -482,7 +483,7 @@ h2 {
 .input-group input:valid ~ label,
 .input-group textarea:focus ~ label,
 .input-group textarea:valid ~ label {
-    top: -20px;
+    top: -13px;
     left: 5px;
     font-size: 14px;
     color: var(--light-white-color);
@@ -576,6 +577,7 @@ footer div {
 
     .menu li::marker {
         font-size: 0;
+        color:var(--main-bg2-color)
     }
     
     .contact-contanier{
