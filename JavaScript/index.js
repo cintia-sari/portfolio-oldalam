@@ -6,4 +6,4 @@ function closeHamburgerMenu() {
 
 for (let link of menuLinks) {
     link.addEventListener('click', closeHamburgerMenu);
-}
+};
