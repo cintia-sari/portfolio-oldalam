@@ -145,11 +145,11 @@ textarea {
 }
 
 .menu a {
-    font-size: 60px;
+    font-size: 40px;
     float: center;
     display: inline-block;
     text-align: center;
-    padding: 50px 30px;
+    padding: 20px 30px;
     text-decoration:none;
     text-decoration: bold;
     color: var(--main-txt2-color);
@@ -328,8 +328,7 @@ flex-wrap: wrap;
  }
 
  .portfolio-conatnier  .button {
-    margin:10px;
-   
+    margin:10px 20px 30px;
 }
 
 .portfolio-conatnier .button:first-of-type {
@@ -582,11 +581,6 @@ footer div {
     
     .contact-contanier{
         min-width: 500px;
-    }
-
-    .portfolio-button-contanier{
-      margin-left:15%;
-      margin-right: 15%;
     }
 
 }
