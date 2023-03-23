@@ -414,6 +414,10 @@ h2 {
 
 /* contact section*/
 
+.contact-contanier{
+    min-width: 250px;
+}
+
 .email-box {
     position: relative;
     display: flex;
@@ -436,16 +440,18 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items:center;
+    justify-content: center;
  }
 
  .email .input-group {
     position: relative;
+
  }
 
  .email .input-group input, textarea {
-    min-width: 300px;
+    min-width: 100%;
     font-size: 16px;
-    padding: 10px 0px;
+    padding: 10px 10px;
     color:var(--main-txt2-color);
     margin-bottom: 30px;
     border-style: none;
@@ -458,8 +464,7 @@ h2 {
     border: solid var(--main-txt1-color);
     min-height: 120px;
     max-height: 260px;
-    max-width: 100%;
-    min-width: 300px;
+    min-width: 100%;
  }
 
  .email .input-group label {
@@ -485,7 +490,7 @@ h2 {
  }
 
 textarea {
-   padding:5px 10px;
+   padding:10px 10px;
  }
 
  .email-button-div {
@@ -568,7 +573,7 @@ footer div {
         font-size: 0;
     }
     
-    .input {
+    .contact-contanier{
         min-width: 500px;
     }
 
