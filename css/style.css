@@ -31,6 +31,38 @@ textarea {
     font-family: 'Oswald', sans-serif;
 }
 
+.button {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background-color: var(--main-bg2-color);
+    border:3px solid var(--main-txt2-color);
+    color:var(--main-txt2-color);
+    padding:12px;
+    cursor: pointer; 
+    width: 150px; 
+    transition: 0.1s;
+    font-size: large;
+    font-weight:900;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.297);
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: var(--main-txt1-color);
+    border:3px solid var(--main-txt1-color);
+    color:var(--main-bg1-color);
+}
+
+.button:active,
+.button:hover {
+    outline: 0;
+}
+   
+.button:active {
+    transform: scale(0.90);
+}
+
 
 /*navigation menu*/
 
@@ -178,43 +210,6 @@ main {
 .hero-img {
     max-width: 250px;
 }
-   
-.skills-img {
-    height: 60px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-    
-.skills-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction:row;
-    margin-bottom: 20px;
-}
-
-.about-me-contanier {
-    padding-bottom: 30px;
-    background-color: var(--main-bg2-color);
-}
-
-.skills-div div {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 20px;
-    text-align: center;
-}
-
-.skills-div div h4 {
-    margin-top: 10px;
-    border-bottom: none;
-}
-
-.about-me-contanier .button {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
 
 .social-media-icon {
     display: flex;
@@ -242,38 +237,49 @@ main {
     font-family: 'Oswald', sans-serif;
 }
 
-.button {
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
+.cv-button-div {
+    margin: 50px 0 80px;
+}
+
+
+/*About-me section */
+
+.about-me-contanier {
+    padding-bottom: 30px;
     background-color: var(--main-bg2-color);
-    border:3px solid var(--main-txt2-color);
-    color:var(--main-txt2-color);
-    padding:12px;
-    cursor: pointer; 
-    width: 150px; 
-    transition: 0.1s;
-    font-size: large;
-    font-weight:900;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.297);
-    text-decoration: none;
+}
+
+.about-me-contanier .button {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.skills-div div {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
     text-align: center;
 }
 
-.button:hover {
-    background-color: var(--main-txt1-color);
-    border:3px solid var(--main-txt1-color);
-    color:var(--main-bg1-color);
+.skills-div div h4 {
+    margin-top: 10px;
+    border-bottom: none;
 }
 
-.button:active,
-.button:hover {
-    outline: 0;
+.skills-img {
+    height: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
-   
-.button:active {
-    transform: scale(0.90);
+    
+.skills-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction:row;
+    margin-bottom: 20px;
 }
-
 
 /*portfolio section */
 
